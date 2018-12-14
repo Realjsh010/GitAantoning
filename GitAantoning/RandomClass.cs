@@ -15,8 +15,8 @@ namespace GitAantoning
 
         public int MaakGetalletje(int seed)
         {
-            Random rnd = new Random(EenProperty);
-            return rnd.Next(5);
+            Random rnd = new Random(seed);
+            return rnd.Next(5) + EenProperty;
         }
     }
 }
