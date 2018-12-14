@@ -12,5 +12,11 @@ namespace GitAantoning
         {
             EenProperty = eenProperty;
         }
+
+        public int MaakGetalletje(int seed)
+        {
+            Random rnd = new Random(EenProperty);
+            return rnd.Next(5);
+        }
     }
 }
